@@ -2895,7 +2895,7 @@ double vifScale(int vif)
         */
 
     default: warning("(wmbus) warning: type 0x%x cannot be scaled!\n", vif);
-        return -1;
+        return 1.0; // No scaling when type is unknown
     }
 }
 
